@@ -25,7 +25,8 @@ $(document).ready(function() {
     event.preventDefault();
     const number1 = parseInt($("#add1").val());
     const number2 = parseInt($("#add2").val());
-    alert(add(number1, number2));
+    const result = add(number1, number2);
+    $("#output").text(result);
   // alert(convertToCelsius(number1).toFixed());
   });
 });
