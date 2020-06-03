@@ -11,6 +11,7 @@
     <div class="container">
       <h1>Calculator</h1>
       <form id="add">
+        <h3>Addition</h3>
         <div class="form-group">
           <label for="add1">1st number:</label>
           <input id="add1" class="form-control" type="text">
@@ -20,10 +21,21 @@
           <input id="add2" class="form-control" type="text">
         </div>
         <button type="submit" class="btn">Add!</button>
+        <span id="outputAdd"></span>
       </form>
-      <div id="output">
-
-      </div>
+      <form id="subtract">
+        <h3>Subtraction</h3>
+        <div class="form-group">
+          <label for="sub1">1st number:</label>
+          <input id="sub1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="sub2">2nd number:</label>
+          <input id="sub2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Subtract!</button>
+        <span id="outputSubtract"></span>
+      </form>
     </div>
   </body>
 </html>

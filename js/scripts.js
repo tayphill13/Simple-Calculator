@@ -21,12 +21,19 @@ const divide = function (number1, number2) {
 
 // User Interface Logic
 $(document).ready(function() {
-  $("form#add").submit(function(event) {
+  $("form#add").submit(function(event){
     event.preventDefault();
-    const number1 = parseInt($("#add1").val());
-    const number2 = parseInt($("#add2").val());
-    const result = add(number1, number2);
-    $("#output").text(result);
+    const numberAddition = parseInt($("#add1").val());
+    const numberAddition2 = parseInt($("#add2").val());
+    const result = add(numberAddition, numberAddition2);
+    $("#outputAdd").text(result);
+  });
+  $("form#subtract").submit(function(event){
+    event.preventDefault();
+    const numberSubtract = parseInt($("#sub1").val());
+    const numberSubtract2 = parseInt($("#sub2").val());
+    const result2 = subtract(numberSubtract, numberSubtract2);
+    $("#outputSubtract").text(result2);
   // alert(convertToCelsius(number1).toFixed());
   });
-});
+  });
