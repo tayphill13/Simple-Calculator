@@ -21,9 +21,11 @@ const divide = function (number1, number2) {
 
 // User Interface Logic
 $(document).ready(function() {
-  const number1 = parseInt(prompt("Enter first number"));
-  const number2 = parseInt(prompt("Enter second number:"));
-  alert(add(number1, number2));
+  $("form#add").submit(function(event) {
+    event.preventDefault();
+    const number1 = parseInt($("#add1").val());
+    const number2 = parseInt($("#add2").val());
+    alert(add(number1, number2));
   // alert(convertToCelsius(number1).toFixed());
-
-})
+  });
+});
