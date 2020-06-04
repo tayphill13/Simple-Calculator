@@ -35,14 +35,14 @@ $(document).ready(function() {
     const result2 = subtract(numberSubtract, numberSubtract2);
     $("#outputSubtract").text(result2);
   });
-    $("form#subtract").submit(function(event){
+    $("form#multiply").submit(function(event){
       event.preventDefault();
       const numberMultiply = parseInt($("#mult1").val());
       const numberMultiply2 = parseInt($("#mult2").val());
       const result3 = multiply(numberMultiply, numberMultiply2);
       $("#outputMultiply").text(result3);
   });
-      $("form#subtract").submit(function(event){
+      $("form#divide").submit(function(event){
         event.preventDefault();
         const numberDivide = parseInt($("#div1").val());
         const numberDivide2 = parseInt($("#div2").val());

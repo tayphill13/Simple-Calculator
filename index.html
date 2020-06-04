@@ -9,23 +9,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Simple Calculator</h1>
+        <h6>By Ruthie and Taylor<h6>
+      </div>
       <div class="row">
-        <form id="add">
-          <div class="col">
-              <h3>Addition</h3>
-              <div class="form-group">
-                <label for="add1">1st number:</label>
-                <input id="add1" class="form-control" type="text">
-              </div>
-              <div class="form-group">
-                <label for="add2">2nd number:</label>
-                <input id="add2" class="form-control" type="text">
-              </div>
-              <button type="submit" class="btn">Add!</button>
-              <span id="outputAdd"></span>
+        <div class="col-md-5">
+          <form id="add">
+          <h3>Addition</h3>
+          <div class="form-group">
+            <label for="add1">1st number:</label>
+            <input id="add1" class="form-control" type="text">
           </div>
-        </form>
-        <div class="col"> 
+          <div class="form-group">
+            <label for="add2">2nd number:</label>
+            <input id="add2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Add!</button>
+          <span id="outputAdd"></span>
+          </form>
+        </div>
+        <div class="col-md-5">
           <form id="subtract">
             <h3>Subtraction</h3>
             <div class="form-group">
@@ -41,32 +45,39 @@
           </form>
         </div>
       </div>
-      <form id="multiply">
-        <h3>Multiplication</h3>
-        <div class="form-group">
-          <label for="mult1">1st number:</label>
-          <input id="mult1" class="form-control" type="text">
+      <hr>
+      <div class="row">
+        <div class="col-md-5">
+        <form id="multiply">
+          <h3>Multiplication</h3>
+          <div class="form-group">
+            <label for="mult1">1st number:</label>
+            <input id="mult1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="mult2">2nd number:</label>
+            <input id="mult2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Multiply!</button>
+          <span id="outputMultiply"></span>
+        </form>
         </div>
-        <div class="form-group">
-          <label for="mult2">2nd number:</label>
-          <input id="mult2" class="form-control" type="text">
+        <div class="col-md-5">
+          <form id="divide">
+            <h3>Division</h3>
+            <div class="form-group">
+              <label for="div1">1st number:</label>
+              <input id="div1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="div2">2nd number:</label>
+              <input id="div2" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Divide!</button>
+            <span id="outputDivide"></span>
+          </form>
         </div>
-        <button type="submit" class="btn">Add!</button>
-        <span id="outputMultiply"></span>
-      </form>
-      <form id="divide">
-        <h3>Division</h3>
-        <div class="form-group">
-          <label for="div1">1st number:</label>
-          <input id="div1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="div2">2nd number:</label>
-          <input id="div2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Add!</button>
-        <span id="outputDivide"></span>
-      </form>
-    </div>
+      </div>
+    `</div>
   </body>
 </html>
